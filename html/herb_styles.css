@@ -1,0 +1,543 @@
+:root {
+    /*COLORS*/
+    --color1: #524;
+    --color2: #413;
+    --color3: #312;
+    --color4: #606;
+    --color5: #731;
+    --color6: #800;
+    --color-text1: #fff;
+    --color-text2: #000;
+
+    /*TEXT STUFF*/
+    --font-fam: Helvetica, sans-serif;
+}
+
+/*tag modifications*/
+body {
+    background-color: var(--color1);
+    color: var(--color-text1);
+    font-family: var(--font-fam);
+    font-size: 18;
+    margin: 0px;
+    line-height: 1.3;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+form {
+    font-size: 18px;
+}
+
+textarea, input {
+    font-family: var(--font-fam);
+    font-size: inherit;
+    width: 100%;
+    line-height: 25px;
+    padding: 5px 7px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+input {
+    height: 35px;
+    width: 100%;
+    max-width: 350px;
+    font-size: inherit;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 0px;
+    border: none;
+    font-size: inherit;
+    height: 35px;
+    min-width: 35px;
+    vertical-align: bottom;
+}
+
+/*containers and wrappers*/
+.has-top-bar {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.has-side-bar {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper, .wrapper-flex, .wrapper-700, .wrapper-1000, .wrapper-mtop {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: none;
+}
+
+.wrapper-700 {
+    margin: auto;
+    max-width: 700px;
+}
+
+.wrapper-1000 {
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+.wrapper-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-mtop {
+    margin: 20px 0px 0px 0px;
+}
+
+/*navbar stuff*/
+.navbar, .navbar-stretch {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > .navbar-item, .navbar-stretch > .navbar-item {
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    min-width: 60px;
+    max-width: 200px;
+    padding: 10px 20px;
+}
+
+.navbar-stretch > .navbar-item {
+    width: 100%;
+    max-width: none;
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height: 60px;
+}
+
+.navbar-stretch > .logo {
+    width: auto;
+}
+
+/*body stuff*/
+.body {
+    overflow-y: scroll;
+    padding: 0px;
+}
+
+.section {
+    padding: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sections {
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.card-section {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-row, .card-row-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-row {
+    justify-content: space-evenly;
+}
+
+.card-normal, .card-square, .card-grow {
+    margin: 15px;
+    padding: 30px;
+    height: 400px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card-normal {
+    width: 300px;
+}
+
+.card-square {
+    width: 400px;
+}
+
+.card-grow {
+    flex-grow: 1;
+    width: auto;
+    min-width: 300px;
+}
+
+/*extra style stuff*/
+.btn-big {
+    padding: 10px;
+    height: 75px;
+    min-width: 175px;
+    font-size: 36px;
+    margin: 15px auto auto auto;
+}
+
+.round-search-form > button {
+    border-radius: 0px 20px 20px 0px;
+    padding-right: 5px;
+}
+
+.round-search-form > input {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.search-form > input, .round-search-form > input {
+    padding-left: 10px;
+    width: calc(100% - 80px)
+}
+
+.stretch {
+    width: 100%;
+    max-width: none;
+}
+
+/*appearing stuff*/
+.appear, .appear2 {
+    display: none;
+}
+
+/*border edges*/
+.border {
+    border: 5px solid #111;
+}
+
+.round {
+    border-radius: 20px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 3px #302;
+}
+
+/*text stuff*/
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.form-text {
+    font-size: inherit;
+    margin: 15px 0px 5px 0px;
+}
+
+/* colors and stuff*/
+.color1 {
+    background-color: var(--color1);
+}
+
+.color2 {
+    background-color: var(--color2);
+}
+
+.color3 {
+    background-color: var(--color3);
+}
+
+.color4 {
+    background-color: var(--color4);
+}
+
+.color5 {
+    background-color: var(--color5);
+}
+
+.color5 {
+    background-color: var(--color6);
+}
+
+.color1, .color2, .color3, .color4 {
+    color: var(--color-text1);
+}
+
+.color5, .color6 {
+    color: var(--color-text2);
+}
+
+.color1-grad {
+    background-image: linear-gradient(60deg, var(--color1), transparent);
+}
+
+.color2-grad {
+    background-image: linear-gradient(60deg, var(--color2), transparent);
+}
+
+.color3-grad {
+    background-image: linear-gradient(60deg, var(--color3), transparent);
+}
+
+.color4-grad {
+    background-image: linear-gradient(60deg, var(--color4), transparent);
+}
+
+.color5-grad {
+    background-image: linear-gradient(60deg, var(--color5), transparent);
+}
+
+.color6-grad {
+    background-image: linear-gradient(60deg, var(--color6), transparent);
+}
+
+.text-color-normal {
+    color: var(--color-text1);
+}
+
+.text-color1 {
+    color: var(--color1);
+}
+
+.text-color4 {
+    color: var(--color4);
+}
+
+/*hovering and clicking stuff*/
+.hover-color1:hover {
+    cursor: pointer;
+    background-color: var(--color1);
+}
+
+.hover-color2:hover {
+    cursor: pointer;
+    background-color: var(--color2);
+}
+
+.hover-color3:hover {
+    cursor: pointer;
+    background-color: var(--color3);
+}
+
+.hover-color4:hover {
+    cursor: pointer;
+    background-color: var(--color4);
+}
+
+.hover-color5:hover {
+    cursor: pointer;
+    background-color: var(--color5);
+}
+
+.hover-color6:hover {
+    cursor: pointer;
+    background-color: var(--color5);
+}
+
+.hover-spin {
+    transition: 0.8s;
+}
+.hover-spin:hover {
+    transform: rotate(720deg);
+}
+
+.hover-outline:hover {
+    box-shadow: 0px 0px 10px #999;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0px 0px 15px #111;
+}
+
+.click-color1:active {
+    background-color: var(--color1);
+}
+
+.click-color2:active {
+    background-color: var(--color2);
+}
+
+.click-color3:active {
+    background-color: var(--color3);
+}
+
+.click-color4:active {
+    background-color: var(--color4);
+}
+
+.click-color5:active {
+    background-color: var(--color5);
+}
+
+.click-color6:active {
+    background-color: var(--color6);
+}
+
+/*dynamic stuff*/
+@media screen and (max-width: 1020px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    .appear {
+        display: flex;
+    }
+
+    .has-side-bar {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .navbar > .navbar-item, .navbar-stretch > .navbar-item {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .btn-big {
+        padding: 10px;
+        height: 65px;
+        min-width: 140px;
+        font-size: 30px;
+        margin: 15px auto auto auto;
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    .card-grow {
+        max-width: 300px;
+        width: 300px;
+        height: 100%;
+        min-height: 300px;
+    }
+
+    .card-square {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .card-grow, .card-square, .card-normal {
+        width: 100%;
+        margin: 10px;
+        height: auto;
+        min-height: 300px;
+        min-width: 0px;
+        max-width: 300px;
+    }
+
+    .disappear2 {
+        display: none;
+    }
+
+    .appear2 {
+        display: flex;
+    }
+
+    .appear2 {
+        display: flex;
+    }
+
+    .section {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .sections {
+        padding: 0px;
+    }
+
+    button {
+        cursor: pointer;
+        border-radius: 0px;
+        border: none;
+        font-size: 16px;
+        height: 30px;
+        min-width: 35px;
+        vertical-align: bottom;
+    }
+    
+    input {
+        line-height: 20px;
+        max-width: 350px;
+        padding: 5px;
+        font-size: 16px;
+        height: 30px;
+    }
+}
